@@ -1,17 +1,13 @@
 # VC File Compile:
 Run: Developer Command Prompt for VS2015
 ```sh
->> cd F:\GD\Microsoft\MSDN-CODES
->> F:
->> cl main.c
+cl main.c
 ```
 
 # VC++ File Compile:
 Run: Developer Command Prompt for VS2015
 ```sh
->> cd F:\GD\Microsoft\MSDN-CODES
->> F:
->> cl FileSystemWatch.cc /clr
+cl FileSystemWatch.cc /clr
 ```
 
 # Add library to CC File
