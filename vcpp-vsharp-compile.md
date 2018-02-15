@@ -23,12 +23,12 @@ cl main.cc /clr
 ```sh
 csc main.cs 
 ```
-* Compiles ``` main.cs ``` producing ``` main.dll ```
+* Compiles ` main.cs ` producing ` main.dll `
 ```sh
 csc /target:library main.cs
 ```
 
-* Compiles ``` main.cs ``` and creates ``` main.exe ```
+* Compiles ` main.cs ` and creates ` main.exe `
 ```sh
 csc /out:main.exe main.cs
 ```
@@ -39,13 +39,13 @@ csc /out:main.exe main.cs
 csc /define:DEBUG /optimize /out:outfile.exe *.cs
 ```
 
-* Compiles all the C# files in the current directory producing a debug version of ``` outfile.dll ```
+* Compiles all the C# files in the current directory producing a debug version of ` outfile.dll `
 * No logo and no warnings are displayed
 ```sh
 csc /target:library /out:outfile.dll /warn:0 /nologo /debug *.cs
 ```
 
-* Compiles all the C# files in the current directory to ``` outfile.xyz ``` (a DLL)
+* Compiles all the C# files in the current directory to ` outfile.xyz ` (a DLL)
 ```sh
 csc /target:library /out:outfile.xyz *.cs
 ```
