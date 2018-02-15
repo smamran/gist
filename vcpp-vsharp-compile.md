@@ -19,7 +19,7 @@ cl main.cc /clr
 
 [C# Compile](https://msdn.microsoft.com/en-us/library/78f4aasd.aspx)
 ## Sample Command Lines for the C# Compiler
-* Compiles main.cs producing ``` main.exe ```
+* Compiles main.cs producing ` main.exe `
 ```sh
 csc main.cs 
 ```
@@ -34,7 +34,7 @@ csc /out:main.exe main.cs
 ```
 
 * Compiles all the C# files in the current directory, with optimizations on and defines the DEBUG symbol.
-* The output is `` outfile.exe ``
+* The output is ` outfile.exe `
 ```sh
 csc /define:DEBUG /optimize /out:outfile.exe *.cs
 ```
