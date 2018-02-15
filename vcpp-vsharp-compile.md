@@ -1,11 +1,11 @@
 # VC File Compile
-* Run: Developer Command Prompt for VS2015
+* Run: Developer Command Prompt for Visual Studio
 ```sh
 cl main.c
 ```
 
 # VC++ File Compile
-* Run: Developer Command Prompt for VS2015
+* Run: Developer Command Prompt for Visual Studio
 ```sh
 cl main.cc /clr
 ```
