@@ -1,4 +1,5 @@
 ### [How to Create Portable JDK](https://stackoverflow.com/questions/1619662/how-can-i-get-the-latest-jre-jdk-as-a-zip-file-rather-than-exe-or-msi-installe)
+* Check ` java ` & ` javac ` version ` .\java.exe -version ` & ` .\javac.exe -version `
 ```sh
 For JDK 8u102 things have changed, this worked for me:
 Download windows JDK exe
