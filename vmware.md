@@ -17,4 +17,5 @@ Windows: 0000
 ```
 ubuntu
 windows
+android
 ```
