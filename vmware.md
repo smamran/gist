@@ -1,10 +1,15 @@
 ## VMWare Machine Size
 ```sh
-  For windows : 250 GB
-  For Linux   : 100 GB
-  For Android : 32 GB
+windows : 250 GB
+Linux   : 100 GB
+Android : 32 GB
 ```
 ## Username for Host & Guest Machine
 ```sh
 amran
+```
+## Password
+```sh
+Linux  : 0
+Windows: 0000
 ```
