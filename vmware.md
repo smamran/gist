@@ -13,3 +13,8 @@ amran
 Linux  : 0
 Windows: 0000
 ```
+## Machine Name [Always Latest Version]
+```
+ubuntu
+windows
+```
