@@ -4,3 +4,7 @@
   For Linux   : 100 GB
   For Android : 32 GB
 ```
+## Username for Host & Guest Machine
+```sh
+amran
+```
