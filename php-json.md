@@ -6,7 +6,7 @@ $json = array(
     'Name' => 'Amran',
     'Address' => array(
         'Present-address' => array(
-            'Zilla' => 'dhaka',
+            'Zila' => 'dhaka',
             'Thana' => 'khilkhet'
         ),
         'Permanent-address' => array(
@@ -14,7 +14,7 @@ $json = array(
             'Thana' => 'kaligonj'
         )
     ),
-    'Aga' => 25,
+    'Age' => 25,
     'Gender' => 'male',
     'Nick' => 'netcse'
 );
