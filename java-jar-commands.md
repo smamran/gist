@@ -21,7 +21,11 @@ src >> jar cvfe Main.jar main.Main main* [Linux n Windows Both]
 [Running]
 >> java -cp .:/path/external/libs.jar Main [For Linux]
 >> java -cp .;/path/external/libs.jar Main [For Windows]
+
+[Multiple Jars]
+>> java -cp .:~app/java/apidemo/lib/* SyncApp [For Linux]
 ```
+
 
 # :dragon: :coffee: 🔪🔧 Recursively Compile Java Files In Sub Folders 🗡🔨 :dragon: :coffee: 
 ```sh
