@@ -24,6 +24,11 @@ src >> jar cvfe Main.jar main.Main main* [Linux n Windows Both]
 
 [Multiple Jars]
 >> java -cp .:~app/java/apidemo/lib/* SyncApp [For Linux]
+
+[Compile & Run a Project]
+javac -d out/production/apidemo -cp .:./lib/* src/*.java
+cd out/production/apidemo
+java -cp .:../../../lib/* SyncApp
 ```
 
 
