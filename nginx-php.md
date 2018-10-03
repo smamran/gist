@@ -1,125 +1,85 @@
-Hello friends, I am back with new video, but this time I am gonna show to something about a server.
-
-Yeah, it's not an Apache, IIS, Zeus web server, Oracle Web Tier, lighttpd, Apache Tomcat etc..
-
-But it's all about Nginx web server.
-
-
-
-	- It's free open source popular web server including IMAP/POP3 proxy server.
-
-	- Hosting about 7.5% of all domains worldwide, Nginx is known for its high performance, 
-	  stability, simple configuration and low resource usage.
-
-	- This web server doesn't use threads to handle requests rather a much more scalable
-	  event-driven architecture which uses small and predictable amounts of memory under load.
-
-
-For more information about Nginx search in Google :D
-
-
-Today I'll show you that how to configure Nginx web server with PHP in windows 7.
-
-For that we need to download Nginx server's setup files and PHP's setup files as well.
-
-
-Go to Nginx main website: http://nginx.org/ and download nginx latest release.
-
-
-
-
-For PHP got to this site http://windows.php.net/download/ and download latest relaese.
-
-I am not gonna download both of them because I have already downloaded them.
-
-
-
-
-
-
-
-
-
-
-After downloading both setups extract them into C:// drive.
-
-
-put extract php folder in nginx folder.
-
-Now follow steps as I am doing in this video.
-
-
-To configure PHP in nginx we need to make some changes in nginx.conf file.
-
-Remove old code in nginx.conf file paste below code in nginx.conf.
-
-here is code :
-
-
-	location ~ .php$ {
-	root           html;
-	fastcgi_pass   127.0.0.1:9000;
-	fastcgi_index  index.php;
-	fastcgi_param  SCRIPT_FILENAME  C:/nginx/html/$fastcgi_script_name;
-	include        fastcgi_params;
-	}
-
-
-
-
-
-
-
-To start nginx and php use below batch code:
-
-@ECHO OFF
-start C:\nginx\nginx.exe
-start C:\nginx\php\php-cgi.exe -b 127.0.0.1:9000 -c C:\nginx\php\php.ini
-ping 127.0.0.1 -n 1>NUL
-echo Starting nginx
-echo .
-echo ..
-echo ...
-ping 127.0.0.1 >NUL
-EXIT
-
-
-To stop nginx and php use below batch code.
-
-
-
-
-@ECHO OFF
-taskkill /f /IM nginx.exe
-taskkill /f /IM php-cgi.exe
-Exit
-
-
-
-as we can see on my local ip 127.0.0.1 there is nothing to load.
-
-
-let us start nginx server.
-
-
-
-our server has been started :-)
-
-
-now let us upload php file.
-
-
-
-our nginx server started with php :-)
-
-enjoy :-)
-
-
-nginx to too faster than apache, once try nginx you will love it :-)
-
-
-thank you :D
-
-
-
-
+## Nginx Configure for PHP
+
+* First Install Nginx Server
+```sh
+sudo -s
+nginx=stable # use nginx=development for latest development version
+add-apt-repository ppa:nginx/$nginx
+apt-get update
+apt-get install nginx
+```
+
+* Check Ubuntu Firewall Allows Nginx
+```sh
+sudo ufw app list
+```
+
+* Install PHP-FPM Package 
+* Works Like Node Server. Process php files, generates contents and serves back to Nginx
+```sh
+sudo apt install php7.2-fpm
+```
+
+* Configuration change ` php7.2-fpm `
+```sh
+sudo vim /etc/php/7.2/fpm/php.ini
+```
+
+* Search ` / ` for ` cgi.fix_pathinfo `
+* Uncomment the line and set value ` 0 `
+```sh
+cgi.fix_pathinfo=0
+```
+
+* Nginx Configs folder ` /etc/nginx/sites-available ` contains available sites configurations for future use
+* ` /etc/nginx/sites-enabled ` folder contains currently active configurations
+* Normally a ` default ` file from ` sites-available ` is soft linked to ` etc/nginx/sites-enabled ` folder
+* We can see what contains in ` sites-enabled ` folder using ` ll `
+```sh
+lrwxrwxrwx 1 root root   34 Oct  2 02:42 default -> /etc/nginx/sites-available/default
+```
+* So Editing ` sites-available/default ` file will efect ` sites-enabled/default ` file
+```sh
+sudo vim /etc/nginx/sites-available/default
+```
+* Only Change Configs like this
+```sh
+index index.php index.html index.htm index.nginx-debian.html;
+
+server_name 192.168.5.128;
+
+location ~ \.php$ {
+                include snippets/fastcgi-php.conf;
+
+        #       # With php-fpm (or other unix sockets):
+                fastcgi_pass unix:/var/run/php/php7.2-fpm.sock;
+        #       # With php-cgi (or other tcp sockets):
+        #       fastcgi_pass 127.0.0.1:9000;
+        }
+
+ location ~ /\.ht {
+                deny all;
+        }
+```
+
+* Check Configuration & Restart
+```sh
+sudo nginx -t
+sudo systemctl restart nginx
+```
+
+* Check ` php7.2-fpm ` is running
+```sh
+ps aux | grep php
+/etc/init.d/php7.2-fpm start
+```
+
+* Check what error nginx generates after reloading browser url
+```sh
+tail /var/log/nginx/error.log
+```
+
+* Serve ` phpinfo() ` contents
+```sh
+curl localhost
+```
