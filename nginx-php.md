@@ -83,3 +83,7 @@ tail /var/log/nginx/error.log
 ```sh
 curl localhost
 ```
+
+## Troubleshoot
+#### Bad Gateway Problem
+* Check ` fastcgi_pass unix:/var/run/php/php7.2-fpm.sock; ` file location is ok configured in ` nginx `
