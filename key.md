@@ -45,7 +45,7 @@ A4768-EA6BF-B9933-F73F4
 ```sh
 7E6CA-C22FD-0F079-5A0A1
 ```
-### windows 2000 professional
+### Windows 2000 Professional
 ```sh
 Windows 2000 Professional Serial Number: RBDC9-VTRC8-D7972-J97JY-PRVMG
 ```
