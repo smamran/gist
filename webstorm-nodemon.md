@@ -1,2 +1,2 @@
 ## Webstrom ` nodemon ` configure for Windows
-![](https://imgur.com/a/Ey9OJHI)
+![Webstorm Nodemon](https://i.imgur.com/kL01XsD.png)
