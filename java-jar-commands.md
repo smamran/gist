@@ -1,18 +1,18 @@
 # 🔫 🗡 Java Command Line ⚛ 💣 
-# 🔪🔧 Compile Main Class in Different Directory 🗡🔨
+### 🔪🔧 Compile Main Class in Different Directory 🗡🔨
 ```sh
 >> javac main\Main.java
 >> java main.Main.java
 ```
 
-# 🔪🔧 Create Jar 🗡🔨
+### 🔪🔧 Create Jar 🗡🔨
 ```sh
 src >> jar cvfe Main.jar main.Main main\*.class
 src >> jar cvfe Main.jar main.Main main\*.* [If contains FX CSS Windows PC]
 src >> jar cvfe Main.jar main.Main main* [Linux n Windows Both]
 ```
 
-# 🔪🔧 Java Compile & Run With External Jars 🗡🔨 
+### 🔪🔧 Java Compile & Run With External Jars 🗡🔨 
 ```sh
 [Compiling]
 >> javac -cp .:/path/external/libs.jar Main.java [For Linux]
@@ -32,13 +32,13 @@ java -cp .:../../../lib/* SyncApp
 ```
 
 
-# 🔪🔧 Recursively Compile Java Files In Sub Folders 🗡🔨 
+### 🔪🔧 Recursively Compile Java Files In Sub Folders 🗡🔨 
 ```sh
 JBuild.bat >> for /r %%a in (*.java) do ( javac "%%a" )
 JBuild.sh  >> javac $(find ./rootdir/* | grep .java)
 ```
 
-# 🔪🔧 Java Compile By ant 🗡🔨
+### 🔪🔧 Java Compile By ant 🗡🔨
 ```sh
 >> ant
 ```
