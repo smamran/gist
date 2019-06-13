@@ -1,18 +1,18 @@
 # 🔫 🗡 Java Command Line ⚛ 💣 
-# :dragon: :coffee: 🔪🔧 Compile Main Class in Different Directory 🗡🔨 :dragon: :coffee: 
+# 🔪🔧 Compile Main Class in Different Directory 🗡🔨
 ```sh
 >> javac main\Main.java
 >> java main.Main.java
 ```
 
-# :dragon: :coffee: 🔪🔧 Create Jar 🗡🔨 :dragon: :coffee: 
+# 🔪🔧 Create Jar 🗡🔨
 ```sh
 src >> jar cvfe Main.jar main.Main main\*.class
 src >> jar cvfe Main.jar main.Main main\*.* [If contains FX CSS Windows PC]
 src >> jar cvfe Main.jar main.Main main* [Linux n Windows Both]
 ```
 
-# :dragon: :coffee: 🔪🔧 Java Compile & Run With External Jars 🗡🔨 :dragon: :coffee: 
+# 🔪🔧 Java Compile & Run With External Jars 🗡🔨 
 ```sh
 [Compiling]
 >> javac -cp .:/path/external/libs.jar Main.java [For Linux]
@@ -32,13 +32,13 @@ java -cp .:../../../lib/* SyncApp
 ```
 
 
-# :dragon: :coffee: 🔪🔧 Recursively Compile Java Files In Sub Folders 🗡🔨 :dragon: :coffee: 
+# 🔪🔧 Recursively Compile Java Files In Sub Folders 🗡🔨 
 ```sh
 JBuild.bat >> for /r %%a in (*.java) do ( javac "%%a" )
 JBuild.sh  >> javac $(find ./rootdir/* | grep .java)
 ```
 
-# :dragon: :coffee: 🔪🔧 Java Compile By ant 🗡🔨 :dragon: :coffee: 
+# 🔪🔧 Java Compile By ant 🗡🔨
 ```sh
 >> ant
 ```
