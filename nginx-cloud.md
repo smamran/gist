@@ -9,7 +9,14 @@
 
 ### 🔪🔧 Install Dependencies 🗡🔨
 ```sh
-apt-get install libxslt-dev
+sudo apt install libxslt-dev
+sudo apt install libpcre3 libpcre3-dev
+sudo apt install build-essential
+sudo apt install openssl libssl-dev libperl-dev
+sudo apt install libxslt-dev
+sudo apt install libgd2-xpm libgd2-xpm-dev
+sudo apt install libgeoip-dev
+sudo apt install libpam-dev
 ```
 
 #### 🔪🔧 Configure, Compile & Install 🗡🔨
