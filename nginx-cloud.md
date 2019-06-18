@@ -6,6 +6,12 @@
 >> tar xvfvz nginx-1.9.9.tar.gz
 >> cd nginx-1.9.9/
 ```
+
+### 🔪🔧 Install Dependencies 🗡🔨
+```sh
+apt-get install libxslt-dev
+```
+
 #### 🔪🔧 Configure, Compile & Install 🗡🔨
 ```sh
 >> ./configure  --prefix=/usr/local/nginx \
