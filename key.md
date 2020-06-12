@@ -37,14 +37,9 @@ http://idea.ibdyr.com
 ```
 * [Local Server](https://jetbrains-server.ru/2017/03/31/phpstorm-2016-2017-activation/)
 
-### Driver Booster Keys
+### Driver Booster 7.5 Keys
 ```sh
-2EC72-368A4-5E4E9-D54A1
-9354E-AADE7-7C11A-C5DF4
-0EF8E-6CC42-81AA9-D42F4
-F05C2-8CF23-57838-57CF4
-276A1-28F28-8879D-70DF4
-A4768-EA6BF-B9933-F73F4
+5E1A3-3BF60-04673-ED7B7
 ```
 ### Driver Booster 5.1 Keys
 ```sh
