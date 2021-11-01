@@ -7,27 +7,14 @@ Visual Studio 2019 Professional
 NYWVH-HT4XC-R2WYW-9Y3CM-X4V3Y
 ```
 
-### Visual Studio 2017 Keys
+### IntelliJ License Directory
 ```sh
-Visual studio 2017 professional keys
-KBJFW-NXHK6-W4WJM-CRMQB-G3CDH
-
-Visual studio 2017 Enterprise Keys
-NJVYC-BMHX2-G77MM-4XJMR-6Q8QF
-
-Visual studio 2017 Pro Keys
-KBJFW-NXHK6-W4WJM-CRMQB-G3CDH
-HMGNV-WCYXV-X7G9W-YCX63-B98R2
+C:\Users\Amran\AppData\Roaming\JetBrains\CLion2021.2\eval
 ```
 
 ### VMWare 15.x key
 ```sh
 QQYNT-Z6EMW-A1YHW-AFMLJ-QZQDV
-```
-
-### VMWare 14.x Key
-```sh
-GY100-05WDK-H80RZ-4QMNC-XF8U0
 ```
 ### JetBrains IDE Key
 ```sh
