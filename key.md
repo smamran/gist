@@ -12,9 +12,9 @@ NYWVH-HT4XC-R2WYW-9Y3CM-X4V3Y
 C:\Users\Amran\AppData\Roaming\JetBrains\CLion2021.2\eval
 ```
 
-### VMWare 15.x key
+### VMWare 16.x key
 ```sh
-QQYNT-Z6EMW-A1YHW-AFMLJ-QZQDV
+ZF3R0-FHED2-M80TY-8QYGC-NPKYF
 ```
 ### JetBrains IDE Key
 ```sh
