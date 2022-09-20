@@ -1,30 +1,30 @@
 # 🔫 🗡 Java Command Line ⚛ 💣 
 ### 🔪🔧 Compile Main Class in Different Directory 🗡🔨
 ```sh
->> javac main\Main.java
->> java main.Main.java
+javac main\Main.java
+java main.Main.java
 ```
 
 ### 🔪🔧 Create Jar 🗡🔨
 ```sh
->> jar cvfe Main.jar main.Main main\*.class
->> jar cvfe Main.jar main.Main main\*.* [If contains FX CSS Windows PC]
->> jar cvfe Main.jar main.Main main* [Linux n Windows Both]
->> jar cvfe Main.jar Main *
+jar cvfe Main.jar main.Main main\*.class
+jar cvfe Main.jar main.Main main\*.* [If contains FX CSS Windows PC]
+jar cvfe Main.jar main.Main main* [Linux n Windows Both]
+jar cvfe Main.jar Main *
 ```
 
 ### 🔪🔧 Java Compile & Run With External Jars 🗡🔨 
 ```sh
 [Compiling]
->> javac -cp .:/path/external/libs.jar Main.java [For Linux]
->> javac -cp .;/path/external/libs.jar Main.java [For Windows]
+javac -cp .:/path/external/libs.jar Main.java [For Linux]
+javac -cp .;/path/external/libs.jar Main.java [For Windows]
 
 [Running]
->> java -cp .:/path/external/libs.jar Main [For Linux]
->> java -cp .;/path/external/libs.jar Main [For Windows]
+java -cp .:/path/external/libs.jar Main [For Linux]
+java -cp .;/path/external/libs.jar Main [For Windows]
 
 [Multiple Jars]
->> java -cp .:~app/java/apidemo/lib/* SyncApp [For Linux]
+java -cp .:~app/java/apidemo/lib/* SyncApp [For Linux]
 
 [Compile & Run a Project]
 javac -d out/production/apidemo -cp .:./lib/* src/*.java
