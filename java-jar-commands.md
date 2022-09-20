@@ -7,9 +7,10 @@
 
 ### 🔪🔧 Create Jar 🗡🔨
 ```sh
-src >> jar cvfe Main.jar main.Main main\*.class
-src >> jar cvfe Main.jar main.Main main\*.* [If contains FX CSS Windows PC]
-src >> jar cvfe Main.jar main.Main main* [Linux n Windows Both]
+>> jar cvfe Main.jar main.Main main\*.class
+>> jar cvfe Main.jar main.Main main\*.* [If contains FX CSS Windows PC]
+>> jar cvfe Main.jar main.Main main* [Linux n Windows Both]
+>> jar cvfe Main.jar Main *
 ```
 
 ### 🔪🔧 Java Compile & Run With External Jars 🗡🔨 
