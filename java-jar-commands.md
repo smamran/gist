@@ -1,4 +1,10 @@
 # 🔫 🗡 Java Command Line ⚛ 💣 
+
+### 🔪🔧 Compile, Build and Run Jar 🗡🔨
+```sh
+javac Main.java & jar cvfe Main.jar Main *.class & java -jar Main.jar
+```
+
 ### 🔪🔧 Compile Main Class in Different Directory 🗡🔨
 ```sh
 javac main\Main.java
