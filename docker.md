@@ -40,29 +40,19 @@ docker container ls -a
 
 
 ## Nginx Dockerfile ls -> app.js (runs on 8888 port)  node_modules views ... etc
---------------------------------------------------------------------------------
+```
 FROM node
-
 RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
-
 WORKDIR /home/node/app
-
 COPY package*.json ./
-
 USER node
-
 RUN npm install
-
 COPY --chown=node:node . .
-
 EXPOSE 8888
-
 CMD [ "node", "app.js" ]
---------------------------------------------------------------------------------
-
-
+```
 ## .dockerignore
------------------------------------------------------------
+```
 node_modules
 npm-debug.log
 Dockerfile
@@ -70,15 +60,12 @@ Dockerfile
 .git
 README.md
 .gitignore
------------------------------------------------------------
-
 docker build -t todoapp .
-
-docker run --name todoapp -p 8888:8888 -d todoapp 
-
------------------------------------------------------------------------------------
+docker run --name todoapp -p 8888:8888 -d todoapp
+```
 
 ## Docker removing all images(stopped)
-
+```
 docker system prune
 docker system prune -a
+```
