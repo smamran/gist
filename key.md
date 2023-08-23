@@ -3,12 +3,6 @@
 Enterprise: VHF9H-NXBBB-638P6-6JHCY-88JWH
 Professional: TD244-P4NB7-YQ6XK-Y8MMM-YWV2J
 ```
-
-### IntelliJ License Directory
-```sh
-C:\Users\Amran\AppData\Roaming\JetBrains\CLion2021.2\eval
-```
-
 ### VMWare 17.x key
 ```sh
 MC60H-DWHD5-H80U9-6V85M-8280D
