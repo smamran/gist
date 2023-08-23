@@ -9,9 +9,9 @@ Professional: TD244-P4NB7-YQ6XK-Y8MMM-YWV2J
 C:\Users\Amran\AppData\Roaming\JetBrains\CLion2021.2\eval
 ```
 
-### VMWare 16.x key
+### VMWare 17.x key
 ```sh
-ZF3R0-FHED2-M80TY-8QYGC-NPKYF
+MC60H-DWHD5-H80U9-6V85M-8280D
 ```
 ### JetBrains IDE Key
 ```sh
